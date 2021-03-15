@@ -1,12 +1,12 @@
 Param(
     [parameter(Mandatory=$true)][string]$resourceGroup,
-    [parameter(Mandatory=$false)][string]$resourceGroupAcr="",
-    [parameter(Mandatory=$false)][string]$subscription="",
-    [parameter(Mandatory=$false)][string]$subscriptionAcr="",
+    [parameter(Mandatory=$false)][string]$resourceGroupAcr="armregroup",
+    [parameter(Mandatory=$false)][string]$subscription="90816591-891a-4f06-becc-dfc01781d880",
+    [parameter(Mandatory=$false)][string]$subscriptionAcr="90816591-891a-4f06-becc-dfc01781d880",
     [parameter(Mandatory=$false)][string]$setVariables="y",
     [parameter(Mandatory=$false)][string]$varsToSet="*",
-    [parameter(Mandatory=$false)][string]$aksHost="",
-    [parameter(Mandatory=$false)][string]$acrName=""
+    [parameter(Mandatory=$false)][string]$aksHost="testnew",
+    [parameter(Mandatory=$false)][string]$acrName="padma"
 )
 
 if ($setVariables -eq "true" -or $setVariables -eq "y") {
